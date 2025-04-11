@@ -1,0 +1,22 @@
+
+using System;
+
+class TypeCasting
+{
+    static void Main()
+    {
+        byte byteValue = 10;
+        short shortValue = byteValue;
+        int intValue = shortValue;
+        long longValue = intValue;
+        float floatValue = longValue;
+        double doubleValue = floatValue;
+        decimal decimalValue = (decimal)doubleValue;
+
+        Console.WriteLine("Implicit: " + byteValue + " " + shortValue + " " + intValue + " " + longValue + " " + floatValue + " " + doubleValue + " " + decimalValue);
+
+        double doubleVal = 10.99;
+        int intVal = (int)doubleVal;
+
+        Console.WriteLine("Explicit: " + doubleVal + " " + intVal);
+    }
